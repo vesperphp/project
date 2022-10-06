@@ -1,5 +1,5 @@
 {
-  "name": "vesperphp/elemental",
+  "name": "vesperphp/project",
   "type": "project",
   "description": "Vesper PHP, build fast.",
   "keywords": ["framework", "vesperphp"],
