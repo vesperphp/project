@@ -3,7 +3,7 @@
   "type": "project",
   "description": "Vesper PHP, build fast.",
   "keywords": ["framework", "vesperphp"],
-  "license": "",
+  "license": "MIT",
   
   "require": {
         "phpmailer/phpmailer": "6.6.*"
