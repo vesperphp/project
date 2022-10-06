@@ -6,7 +6,8 @@
   "license": "MIT",
   
   "require": {
-        "phpmailer/phpmailer": "6.6.*"
+      "phpmailer/phpmailer": "6.6.*"
+      "vesperphp/elemental": "0.*" 
     }
   
 }
