@@ -1,3 +1,16 @@
 {
-
+  "name": "vesperphp/elemental",
+  "type": "project",
+  "description": "Vesper PHP, build fast.",
+  "keywords": ["framework", "vesperphp"],
+  "license": "",
+  
+  "require": {
+        "vesperphp/logger": "0.*",
+        "vesperphp/vault": "0.*",
+        "vesperphp/foundry": "0.*",
+        "vesperphp/sequel": "0.*",
+        "vesperphp/vault": "0.*"
+    }
+  
 }
