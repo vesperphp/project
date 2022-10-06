@@ -1,0 +1,49 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "0fed8d8dc4ea65a07d316a318773c9e9",
+    "packages": [
+        {
+            "name": "vesperphp/elemental",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vesperphp/elemental.git",
+                "reference": "fead57056d5d2a6bf67d5d5c3b7a62e6e0e8f676"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vesperphp/elemental/zipball/fead57056d5d2a6bf67d5d5c3b7a62e6e0e8f676",
+                "reference": "fead57056d5d2a6bf67d5d5c3b7a62e6e0e8f676",
+                "shasum": ""
+            },
+            "type": "project",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Vesper PHP, build fast.",
+            "keywords": [
+                "framework",
+                "vesperphp"
+            ],
+            "support": {
+                "issues": "https://github.com/vesperphp/elemental/issues",
+                "source": "https://github.com/vesperphp/elemental/tree/0.0.2"
+            },
+            "time": "2022-10-06T18:15:41+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

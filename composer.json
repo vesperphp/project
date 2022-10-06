@@ -2,12 +2,24 @@
   "name": "vesperphp/project",
   "type": "project",
   "description": "Vesper PHP, build fast.",
-  "keywords": ["framework", "vesperphp"],
+  "keywords": ["framework", "vesperphp", "php"],
   "license": "MIT",
   
   "require": {
-      "phpmailer/phpmailer": "6.6.*",
-      "vesperphp/elemental": "0.*" 
-    }
-  
+      "vesperphp/elemental": "0.*"
+  },
+
+  "autoload": {
+    "classmap": [
+      "app/models", 
+      "app/controllers", 
+      "app/filters",
+      "vendor/vesperphp"
+    ]
+  },
+
+  "config": {
+    "optimize-autoloader": true
+  }
+
 }

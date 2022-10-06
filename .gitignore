@@ -1,3 +1,5 @@
+/httpdocs/cache/*.php
 /vendor
 *.log
 .DS_Store
+todo.md
