@@ -16,9 +16,6 @@
     "vesperphp/elemental": "0.*"
   },
   
-  "require-dev": {
-  },
-
   "autoload": {
     "classmap": [
       "app/models", 
@@ -29,7 +26,8 @@
   },
 
   "config": {
-    "optimize-autoloader": true
+    "optimize-autoloader": true,
+    "prefer-stable": true
   }
 
 }
