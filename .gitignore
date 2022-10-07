@@ -3,3 +3,4 @@
 *.log
 .DS_Store
 todo.md
+composer.lock
