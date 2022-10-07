@@ -1,5 +1,5 @@
 <?php 
-require_once '../init/load.php';
+require_once 'load.php';
 
 use Elemental\Elemental;
 

@@ -117,6 +117,18 @@ $config = [
    */
 
   'logger' => [
+
+    /**
+     * Set the location where 
+     * to save the log files.
+     */
+
+    'store' => 'store/logs',
+
+    /**
+     * What should we log?
+     */
+    
     'phperror' => true,    // log php errors
     'frontier' => true,    // log caching and errors
     'flash' => true,       // log flash messages
