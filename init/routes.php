@@ -1,6 +1,7 @@
 <?php
 
 use Elemental\Route;
+use Elemental\Vault;
 use App\Controllers\HomeController;
 
 
