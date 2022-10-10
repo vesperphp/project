@@ -66,6 +66,10 @@ class HomeController extends Model{
 
 
   }
+  
+  public function apitest(){
+    return [1,2,3,4,5];  
+  }
 
   
 }
