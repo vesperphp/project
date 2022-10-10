@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html class="h-100">
+	<head>
+		<title>{% yield title %} - Interact - {% @ site/title %}</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		{% hook head %}
+		</head>
+	<body class="has-background-white-bis">
+	{% hook body %}
+
+	<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+		  <a class="navbar-item" href="https://bulma.io">
+			<img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+		  </a>
+	  
+		  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+		  </a>
+		</div>
+	  
+		<div id="navbarBasicExample" class="navbar-menu">
+	  
+		  <div class="navbar-end">
+			<div class="navbar-item">
+				<div class="buttons">
+				<a class="button is-dark">
+				  Log out
+				</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </nav>
+	
+	<!-- nav / aside-->
+	<div class="admin">
+		<aside class="menu p-5">
+			<p class="menu-label">
+			General
+			</p>
+			<ul class="menu-list">
+				<li><a href="{% route admin/ %}">Dashboard</a></li>
+			</ul>
+			<p class="menu-label">
+			Administration
+			</p>
+			<ul class="menu-list">
+				<li><a href="{% route admin/users %}">Users</a></li>
+				<li><a href="{% route admin/teams %}">Teams</a></li>
+				<li><a href="{% route admin/roles %}">Roles</a></li>
+			</ul>
+			<p class="menu-label">
+			Vault
+			</p>
+			<ul class="menu-list">
+				<li><a href="{% route admin/users %}">Rejections</a></li>
+			</ul>
+			<p class="menu-label">
+			Api
+			</p>
+			<ul class="menu-list">
+				<li><a>Generated tokens</a></li>
+				<li><a>Authentication log</a></li>
+			</ul>
+		</aside>
+	
+		<div class="content p-5">
+	
+		{% flash admin %}
+	
+		<!-- content here -->
+		
+			{% yield content %}
+	
+		<!-- end of content -->
+	
+		</div>
+	
+	</div>
+
+	{% hook foot %}
+	</body>
+</html>

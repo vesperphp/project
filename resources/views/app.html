@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html class="h-100">
+	<head>
+		<title>{% yield title %} - {% @ site/title %}</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		{% hook head %}
+		</head>
+	<body class="d-flex flex-column h-100">
+		
+	
+
+
+	{% hook body %}
+
+    
+
+	{% yield content %}
+	
+	{% include parts/nav.html %}
+
+	{% include parts/footer.html %}
+	
+	{% hook foot %}
+
+	</body>
+</html>

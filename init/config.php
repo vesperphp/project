@@ -10,7 +10,7 @@ $config = [
   'site' => [
       'title' => 'Vesper-PHP',
       'description' => 'The ultimate rag tag PHP framework.',
-      'uri' => 'http://localhost:8888/Vesper-PHP/httpdocs'
+      'uri' => 'http://localhost:8888/project/httpdocs'
     ],
 
   /** 
@@ -71,7 +71,7 @@ $config = [
 
   'frontier' => [
     'cache' => 'httpdocs/cache/',
-    'views' => 'views/', 
+    'views' => 'resources/views/', 
 
     /**
      * These are the namespaces
@@ -83,9 +83,9 @@ $config = [
     'namespaces' => [ 
       'Elemental\Config',
       'Elemental\Re',
-      'Frontier\Glob',
-      'Frontier\Flash',
-      'Frontier\Hook',
+      'Frontier\Service\Glob',
+      'Frontier\Service\Flash',
+      'Frontier\Service\Hook',
       'Sequel\Paginate'
     ],
     
@@ -94,7 +94,7 @@ $config = [
      */
 
     'flash' => [
-      'template' => 'views/parts/flash.html' // the template file for a flash message
+      'template' => 'resources/views/parts/flash.html' // the template file for a flash message
     ]
   ],
 
@@ -136,6 +136,7 @@ $config = [
     'shield' => false,     // log shield bounces and errors
     'speed' => false,      // log php loading speed
     'visits' => false,     // log visits. Warning, this has to reflect in your cookie notice
+    'api' => true,         // log api calls
     //'sendry' => false,   // log sendry errors
     //'sent' => false,     // log sent emails
   ]

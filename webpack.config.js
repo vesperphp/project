@@ -2,7 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-  entry: './views/assets/js/index.js',
+  entry: './resources/assets/js/index.js',
   output: {
     path: path.resolve(__dirname, 'httpdocs'),
     filename: 'js/vesper-bundle.js'

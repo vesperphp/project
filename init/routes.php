@@ -37,37 +37,12 @@ $userPanelRights = [
 //]);
 //Route::get('logout/', SessionController::class, 'logout');
 
-/**
- * Standard Error routing that
- * returns a clean error page.
- */
 
-//Route::get('error/{code}', Error::class, 'view');
 
 /**
- * Package: Interact
- * Interact is the Admin 
- * panel for Vesper.
+ * Require the routes for the admin panel
+ * and error messages.
  */
 
-$adminPanelRights = [
-//    [Vault::class, 'hasRole', [1]],
-];
- 
- /**
-  * Dashboard:
-  */
-  
-//Route::get('admin/', Dashboard::class, 'index', $adminPanelRights);
-
-/**
- * User management:
- */
-
-//Route::get('admin/users/', Users::class, 'index', $adminPanelRights);
-//Route::get('admin/user/new/{id}', Users::class, 'create', $adminPanelRights);
-//Route::post('admin/user/new/{id}', Users::class, 'insert', $adminPanelRights);
-//Route::get('admin/user/edit/{id}', Users::class, 'edit', $adminPanelRights);
-//Route::post('admin/user/edit/{id}', Users::class, 'update', $adminPanelRights);
-//Route::get('admin/user/delete/{id}', Users::class, 'delete', $adminPanelRights);
-//Route::post('admin/user/delete/{id}', Users::class, 'destroy', $adminPanelRights);
+require_once ROOTPATH.'/vendor/vesperphp/elemental/routes.php';
+require_once ROOTPATH.'/vendor/vesperphp/interact/routes.php';

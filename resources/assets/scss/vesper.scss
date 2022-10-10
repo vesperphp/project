@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+body, html{
+    height: 100%;
+}
+
+@import "~bulma/bulma";
+
+/**********/
+/* VESPER */
+
+div.admin{
+    display: flex;
+    flex-direction: row;
+}
+
+aside.menu{
+    flex-grow: 1;
+    width: 20%;
+    max-width: 300px;
+    min-width: 170px;
+}
+
+div.content{
+    flex-grow: 1;
+}
+

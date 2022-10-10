@@ -1,0 +1,72 @@
+{% extends app.html %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+
+
+<div class="container-fluid bg-dark text-light sticky-top shadow-lg mx-0 px-0">
+
+    
+    <div class="container-xxl mx-auto px-1 row align-items-center">
+        <div class="col">
+            <strong>{% @ site/title %}</strong>
+        </div>
+        <div class="col p-3 d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nvaBarToggleMainNav" aria-controls="nvaBarToggleMainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>Nav
+            </button>
+        </div>
+    </div>
+
+    <!-- expand -->
+    <div class="collapse" id="nvaBarToggleMainNav">
+        <div class="bg-dark p-4">
+            <div class="container-xxl">
+                <h5 class="text-white h4">Navigation</h5>
+                <span class="text-muted">Toggleable via the navbar brand.</span>
+            </div>
+        </div>
+    </div>
+    <!-- expand -->
+
+</div>
+ 
+<div class="container-xxl px-3 ">
+    <div class="container-fluid bg-primary rounded-bottom text-light">
+        
+        <div class="row align-items-center">
+            <div class="col p-2 px-4 d-flex justify-content-around">
+                <a href="" class="btn btn-primary">Button</a>
+                <a href="" class="btn btn-primary">Button</a>
+                <a href="" class="btn btn-primary">Button</a>
+                <a href="" class="btn btn-primary">Button</a>
+
+                <div class="col d-grid gap-2 d-flex justify-content-md-end">
+                    <a href="{% route login %}" class="btn btn-light">Login</a>
+                    <a href="{% route register %}" class="btn btn-dark">Register</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container-xxl">
+
+<div class="">Homepage [ {% @ user/name %} {% @ user/avatar %} ]</div>
+
+{% flash homepage %}
+
+<a href="{% route user/edit %}">Edit</a>
+<a href="{% route user/delete %}">Delete</a>
+<a href="{% route user/profile %}">Profile</a>
+
+
+</div>
+
+
+{% endblock %}
+
+{% include parts/extend.html %}

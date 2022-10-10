@@ -1,11 +1,11 @@
 <?php 
 
-session_start();
-
-use ScssPhp\ScssPhp\Compiler;
-use ScssPhp\Server\Server;
+use Elemental\Elemental;
 
 
 require_once "vendor/autoload.php";
 require_once "vendor/vesperphp/elemental/service/functions/debug.php";
 foreach (glob("/init/*.php") as $filename){ require_once $filename; }
+
+
+Elemental::foundry();

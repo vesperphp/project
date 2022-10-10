@@ -15,12 +15,12 @@ $global = [
     'url' => Config::get('site/url'),
     'uri' => Config::get('site/url'),
 
-    /*'user' => [
-        'id' => UserModel::id(),
-        'name' => UserModel::username(),
-        'slug' => UserModel::slug(),
-        'avatar' => UserModel::avatar(),
-    ]*/
+    'user' => [
+        'id' => 1,
+        'name' => 1,
+        'slug' => 1,
+        'avatar' => 1,
+    ]
 
 ];
 

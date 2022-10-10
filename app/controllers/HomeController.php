@@ -31,7 +31,7 @@ class HomeController extends Model{
 
   public function assets(){
 
-    //echo "<!-- Asset placeholder from HomeController::assets() -->";
+    echo "<!-- Asset placeholder from HomeController::assets() -->";
     
   }
 

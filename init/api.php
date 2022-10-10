@@ -14,4 +14,3 @@ use App\Controllers\HomeController;
  */
 
 Api::get('/', HomeController::class, 'apitest', []);
-
