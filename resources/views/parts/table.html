@@ -1,0 +1,26 @@
+
+    {% if($posts!=NULL): %}
+    {% Paginate::front($posts); %}
+    {% foreach( $posts['results'] as $post): %}
+
+    <div class="py-4">
+        <h2>{{ $post['title'] }}</h2>
+        <p>{{ $post['body'] }}</p>
+        <div>
+            <!-- this variable needs some niceness!-->
+            {{ $post['related']['users']['results'][0]['username'] }} | 
+            {{ $post['related']['users']['results'][0]['email'] }}
+            {{ $post['related']['users']['results'][0]['birthdate'] }}
+    
+        </div>
+    </div>
+
+    {% endforeach; %}
+    {% Paginate::front($posts); %}
+    {% else: %}
+    <div>
+        {% Re::direct('error/404'); %}
+    </div>
+    {% endif; %}
+
+for use with the pagination class
