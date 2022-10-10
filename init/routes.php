@@ -24,15 +24,15 @@ Route::get('test/{paginate}', HomeController::class, 'test'); // activate pagina
  */
 
 $userPanelRights = [
-//  [Shield::class, 'hasSession'],
-//  [Shield::class, 'activeAccount']
+//  [Vault::class, 'hasSession'],
+//  [Vault::class, 'activeAccount']
 ];
 
 //Route::get('login/', SessionController::class, 'login',[
-//    [Shield::class, 'noSession'],
+//    [Vault::class, 'noSession'],
 //]);
 //Route::post('login/', SessionController::class, 'authenticate',[
-//   [Shield::class, 'noSession'],
+//   [Vault::class, 'noSession'],
 //]);
 //Route::get('logout/', SessionController::class, 'logout');
 
@@ -50,7 +50,7 @@ $userPanelRights = [
  */
 
 $adminPanelRights = [
-//    [Shield::class, 'hasRole', [1]],
+//    [Vault::class, 'hasRole', [1]],
 ];
  
  /**
