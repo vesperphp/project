@@ -29,8 +29,7 @@ require_once ROOTPATH."/vendor/vesperphp/elemental/service/functions/debug.php";
  */
 
 require_once ROOTPATH.'/vendor/vesperphp/elemental/init/routes.php';
-require_once ROOTPATH.'/vendor/vesperphp/interact/init/routes.php';
-require_once ROOTPATH.'/vendor/vesperphp/interact/init/hooks.php';
+require_once ROOTPATH.'/vendor/vesperphp/interact/init/load.php';
 
 /**
  * Load all the init files

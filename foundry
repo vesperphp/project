@@ -2,10 +2,12 @@
 
 use Elemental\Elemental;
 
+define("ROOTPATH",  dirname(__FILE__));
+define('ISCLI', PHP_SAPI === 'cli');
+if(ISCLI!=1){ die(); }
 
 require_once "vendor/autoload.php";
 require_once "vendor/vesperphp/elemental/service/functions/debug.php";
-foreach (glob("/init/*.php") as $filename){ require_once $filename; }
+foreach (glob(ROOTPATH."/init/*.php") as $filename){ require_once $filename; }
 
-
-Elemental::foundry();
+Elemental::foundry($argv);
