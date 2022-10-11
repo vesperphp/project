@@ -25,3 +25,10 @@ div.content{
     flex-grow: 1;
 }
 
+.shadow-wide{
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, .1);
+}
+
+.rounded-corners{
+    border-radius: 5px;
+}

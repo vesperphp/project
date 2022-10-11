@@ -5,8 +5,8 @@
 {% block content %}
 
 <div class="formbox p-5 mt-3 has-background-white shadow-wide rounded-corners mt-3">
-    <p class="title is-1">{{ $username }}</p>
-    <p class="subtitle is-5">Edit user details</p>
+    <p class="title is-1">Create</p>
+    <p class="subtitle is-5">A new user</p>
 </div>
 
 
@@ -14,7 +14,7 @@
 
 <form method="post">
     {{ _csrf(); }} 
-    {{ $edit_form }}
+    {{ $create_form }}
     
 </form>
     

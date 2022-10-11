@@ -12,7 +12,6 @@ $t->varchar('slug',100);
 
 $t->text('body');
 
-$t->int('soft_delete',1)->default(0);
 $t->timestamp('created_at')->default();
 $t->timestamp('updated_at')->onupdate();
 
