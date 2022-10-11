@@ -11,16 +11,30 @@ define("V_START",microtime('TRUE'));
 define("ROOTPATH",  dirname(__DIR__,1)); // one back
 
 /**
- * Vesper uses Composer for version.
+ * Vesper uses Composer for version management.
  * That is why we use their autoloader.
  */
 
-
 require_once ROOTPATH."/vendor/autoload.php";
+
+/**
+ * Debugger functions.
+ */
+
 require_once ROOTPATH."/vendor/vesperphp/elemental/service/functions/debug.php";
+
+/**
+ * Load the routes and hooks
+ * from the vendor packages.
+ */
+
+require_once ROOTPATH.'/vendor/vesperphp/elemental/init/routes.php';
+require_once ROOTPATH.'/vendor/vesperphp/interact/init/routes.php';
+require_once ROOTPATH.'/vendor/vesperphp/interact/init/hooks.php';
+
+/**
+ * Load all the init files
+ * in the init folder.
+ */
+
 foreach (glob(ROOTPATH."/init/*.php") as $filename){ require_once $filename; }
-
-
-
-
-

@@ -36,13 +36,3 @@ $userPanelRights = [
 //   [Vault::class, 'noSession'],
 //]);
 //Route::get('logout/', SessionController::class, 'logout');
-
-
-
-/**
- * Require the routes for the admin panel
- * and error messages.
- */
-
-require_once ROOTPATH.'/vendor/vesperphp/elemental/routes.php';
-require_once ROOTPATH.'/vendor/vesperphp/interact/routes.php';

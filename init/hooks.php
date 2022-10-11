@@ -3,6 +3,7 @@
 use App\Assets\Assets;
 use Frontier\Service\Hook;
 use App\Controllers\HomeController;
+use Interact\Service\InteractNavigation;
 
 /**
  * This is the place where you 
@@ -11,9 +12,10 @@ use App\Controllers\HomeController;
  * templates. head|body|foot
  */
 
-Hook::asset('frontier/head', 'AssetFilterHead', [Assets::class,'head']);
-Hook::asset('frontier/body', 'AssetFilterBody', [Assets::class,'body']);
-Hook::asset('frontier/foot', 'AssetFilterFoot', [Assets::class,'foot']);
+Hook::asset('head', 'AssetFilterHead', [Assets::class,'head']);
+Hook::asset('body', 'AssetFilterBody', [Assets::class,'body']);
+Hook::asset('foot', 'AssetFilterFoot', [Assets::class,'foot']);
+
 
 /**
  * You can also hook assets 
@@ -21,4 +23,4 @@ Hook::asset('frontier/foot', 'AssetFilterFoot', [Assets::class,'foot']);
  * needed.
  */
 
-Hook::asset('frontier/head', 'homeAsset1', [HomeController::class,'assets']);
+//Hook::asset('frontier/head', 'homeAsset1', [HomeController::class,'assets']);

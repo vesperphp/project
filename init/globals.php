@@ -14,6 +14,7 @@ $global = [
     'title' => Config::get('site/title'),
     'url' => Config::get('site/url'),
     'uri' => Config::get('site/url'),
+    'admin_uri' => Config::get('site/url').'/admin',
 
     'user' => [
         'id' => 1,
