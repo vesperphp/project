@@ -6,3 +6,5 @@ $ composer create-project vesperphp/project <projectname>
 ```
 Run composer to get started.
 This framework is not finished yet so use at your own risk.
+
+You can find the [documentation](https://github.com/vesperphp/documentation) in another repository.
