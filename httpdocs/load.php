@@ -29,8 +29,11 @@ foreach (glob(ROOTPATH."/vendor/vesperphp/elemental/service/functions/*.php") as
  * from the vendor packages.
  */
 
-require_once ROOTPATH.'/vendor/vesperphp/elemental/init/routes.php';
-require_once ROOTPATH.'/vendor/vesperphp/interact/init/load.php';
+foreach (glob(ROOTPATH."/vendor/vesperphp/*/init/load.php") as $filename){ require_once $filename; }
+
+
+//require_once ROOTPATH.'/vendor/vesperphp/elemental/init/routes.php';
+//require_once ROOTPATH.'/vendor/vesperphp/interact/init/load.php';
 
 /**
  * Load all the init files
