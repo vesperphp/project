@@ -1,9 +1,6 @@
 /httpdocs/cache/*.php
-/httpdocs/css/*.css
-/httpdocs/js/*.js
 /vendor
 *.log
 .DS_Store
 todo.md
 composer.lock
-package-lock.json
