@@ -1,0 +1,22 @@
+{% extends admin/admin.html %}
+
+{% block title %}Role management{% endblock %}
+
+{% block content %}
+
+<div class="formbox p-5 mt-3 has-background-white shadow-wide rounded-corners mt-3">
+    <p class="title is-1">{{ $roletitle }}</p>
+    <p class="subtitle is-5">Edit role details</p>
+</div>
+
+
+<div class="formbox p-5 mt-3 has-background-white shadow-wide rounded-corners mt-5">
+
+<form method="post">
+    {{ $edit_form }}
+    
+</form>
+    
+</div>
+
+{% endblock %}

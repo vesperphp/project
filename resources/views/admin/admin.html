@@ -11,52 +11,55 @@
 	{% hook admin_body %}
 
 	<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
-		<div class="navbar-brand">
-		  <a class="navbar-item" href="{% route / %}">
-			<img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="{% @ site/title %}">
-		  </a>
-		  
-		  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-			<span aria-hidden="true"></span>
-			<span aria-hidden="true"></span>
-			<span aria-hidden="true"></span>
-		  </a>
-		</div>
-	  
-		<div id="navbarBasicExample" class="navbar-menu">
-	  
-		  <div class="navbar-end">
-			<div class="navbar-item">
-				<div class="buttons">
-				<a class="button is-dark">
-				  Log out
-				</a>
-			  </div>
+		<div class="container">
+			<div class="navbar-brand">
+			<a class="navbar-item" href="{% route / %}">
+				<img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="{% @ site/title %}">
+			</a>
+			
+			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
 			</div>
-		  </div>
+		
+			<div id="navbarBasicExample" class="navbar-menu">
+		
+			<div class="navbar-end">
+				<div class="navbar-item">
+					<div class="buttons">
+					<a class="button is-dark">
+					Log out
+					</a>
+				</div>
+				</div>
+			</div>
+			</div>
 		</div>
 	  </nav>
 	
 	<!-- nav / aside-->
-	<div class="admin">
-		<aside class="menu p-5">
-			{% hook admin_nav %}
-		</aside>
-	
-		<div class="content p-5">
-	
-		{% flash admin %}
-	
-		<!-- content here -->
+	<div class="container">
+		<div class="admin">
+			<aside class="menu p-5">
+				{% hook admin_nav %}
+			</aside>
+		
+			<div class="content p-5">
+		
+			{% flash admin %}
+		
+			<!-- content here -->
 
-			{% yield content %}
-	
-		<!-- end of content -->
-	
+				{% yield content %}
+		
+			<!-- end of content -->
+		
+			</div>
+		
 		</div>
-	
 	</div>
-
 	{% hook admin_foot %}
 	</body>
 </html>

@@ -23,7 +23,6 @@ $salt = Salt::shake();
 
 Sequel::insert('users')
         ->set('username', 'Admin')
-        ->set('slug', 'admin')
         ->set('password', Hash::make('Admin', $salt))
         ->set('salt', $salt)
         ->set('email', 'admin@admin.com')
@@ -49,14 +48,13 @@ foreach($names as $user){
 
     Sequel::insert('users')
             ->set('username', $user)
-            ->set('slug', strtolower($user))
             ->set('password', Hash::make('Password', $salt))
             ->set('salt', $salt)
             ->set('email', strtolower($user).'@email.com')
             ->set('firstname', strtolower($user))
             ->set('lastname', strtolower($user).'ton')
-            ->set('country', 'USA')
-            ->set('rolesid', 0)
+            ->set('country', 'UK')
+            ->set('rolesid', 1)
             ->do();
 
 }

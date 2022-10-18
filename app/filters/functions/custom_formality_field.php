@@ -7,9 +7,21 @@ function custom_formality_field($object, $result = ''){
     $form = new FormObject($object);
 
     $form->label();
-    $form->field('input_text');
+    $form->field('input');
 
-    $form->template('CUSTOM FIELD: <div class="form {classes}">{field}{label}</div>');
+    $form->template('
+    <div class="field is-horizontal {classes}">
+      <div class="field-label is-normal">
+       {label}
+      </div>
+      <div class="field-body">
+        <div class="field">
+          <p class="control">
+          {field}
+          </p>This is a custom field callback 
+        </div>
+      </div>
+    </div>');
 
     $build = $form->build();
  
