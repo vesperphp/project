@@ -1,19 +1,20 @@
 {% extends admin/admin.html %}
 
-{% block title %}Role management{% endblock %}
+{% block title %}Team management{% endblock %}
 
 {% block content %}
 
 <div class="formbox p-5 mt-3 has-background-white shadow-wide rounded-corners mt-3">
-    <p class="title is-1">Create</p>
-    <p class="subtitle is-5">A new role</p>
+    <p class="title is-1">{{ $teamname }}</p>
+    <p class="subtitle is-5">Edit team details</p>
 </div>
 
 
 <div class="formbox p-5 mt-3 has-background-white shadow-wide rounded-corners mt-5">
 
 <form method="post">
-    {{ $create_form }}
+    {{ $edit_form }}
+    
 </form>
     
 </div>

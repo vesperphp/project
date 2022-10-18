@@ -29,7 +29,7 @@ Sequel::insert('users')
         ->set('firstname', 'Ad')
         ->set('lastname', 'Adminton')
         ->set('country', 'NL')
-        ->set('rolesid', 2)
+        ->set('rolesid', 3)
         ->do();
 
 
@@ -47,7 +47,7 @@ foreach($names as $user){
     $salt = Salt::shake();
 
     Sequel::insert('users')
-            ->set('username', $user)
+            ->set('username', $user.rand(0,100))
             ->set('password', Hash::make('Password', $salt))
             ->set('salt', $salt)
             ->set('email', strtolower($user).'@email.com')
@@ -55,6 +55,23 @@ foreach($names as $user){
             ->set('lastname', strtolower($user).'ton')
             ->set('country', 'UK')
             ->set('rolesid', 1)
+            ->do();
+
+}
+
+// Create a batch of teams
+
+$teams = [
+    'Powerhouse', 'Advertising', 'RaceCrew', 'Yamaha', 'Sprouts'
+];
+
+foreach($teams as $team){
+
+    $salt = Salt::shake();
+
+    Sequel::insert('teams')
+            ->set('slug', strtolower($team))
+            ->set('name', $team)
             ->do();
 
 }
