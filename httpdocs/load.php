@@ -18,22 +18,11 @@ define("ROOTPATH",  dirname(__DIR__,1)); // one back
 require_once ROOTPATH."/vendor/autoload.php";
 
 /**
- * Helper & service 
- * functions.
- */
-
-foreach (glob(ROOTPATH."/vendor/vesperphp/elemental/service/functions/*.php") as $filename){ require_once $filename; }
-
-/**
  * Load the routes and hooks
  * from the vendor packages.
  */
 
 foreach (glob(ROOTPATH."/vendor/vesperphp/*/init/load.php") as $filename){ require_once $filename; }
-
-
-//require_once ROOTPATH.'/vendor/vesperphp/elemental/init/routes.php';
-//require_once ROOTPATH.'/vendor/vesperphp/interact/init/load.php';
 
 /**
  * Load all the init files
