@@ -6,6 +6,14 @@
 
 <h1>Roles</h1>
 
-{% dump($roles); %}
+{% if($roles!=NULL): %}
+
+    {% Paginate::front($roles); %}
+    {{ $roles_list }}
+    {% Paginate::front($roles); %}
+
+{% else: %}
+    {% Re::direct('error/404'); %}
+{% endif; %}
 
 {% endblock %}

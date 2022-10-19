@@ -1,6 +1,8 @@
+/init/config.php
 /httpdocs/cache/*.php
 /vendor
 *.log
 .DS_Store
 todo.md
 composer.lock
+

@@ -6,6 +6,14 @@
 
 <h1>Teams</h1>
 
-{% dump($teams); %}
+{% if($teams!=NULL): %}
+
+    {% Paginate::front($teams); %}
+    {{ $teams_list }}
+    {% Paginate::front($teams); %}
+
+{% else: %}
+    {% Re::direct('error/404'); %}
+{% endif; %}
 
 {% endblock %}

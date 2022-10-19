@@ -6,7 +6,7 @@ $t = new Tablier('users_session');
 
 $t->int('id')->primary();
 
-$t->varchar('hash', 50);
+$t->varchar('hash', 65);
 $t->int('usersid',8)->foreign('users');
 
 $t->timestamp('created_at')->onupdate();

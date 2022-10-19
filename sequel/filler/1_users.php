@@ -33,45 +33,70 @@ Sequel::insert('users')
         ->do();
 
 
-// Create a batch of fake users (19)
+// Create a batch of fake users (24)
 
 $names = [
     'Bob', 'Bill', 'Boyd', 'Leslie', 'Stitch',
     'Quinton', 'Jos', 'Hank', 'Mark', 'Fender',
     'Eline', 'Josine', 'Brent', 'Linda', 'Paula',
-    'Lilo', 'Melijn', 'Charley', 'Spencer'
+    'Lilo', 'Melijn', 'Charley', 'Spencer', 'Francesca',
+    'Victor', 'Bolen', 'Reginald', 'Wilhelm',
+
 ];
 
+$id = 0;
 foreach($names as $user){
+
+    $id++;
 
     $salt = Salt::shake();
 
     Sequel::insert('users')
-            ->set('username', $user.rand(0,100))
+            ->set('username', _slug($user).rand(1,100))
             ->set('password', Hash::make('Password', $salt))
             ->set('salt', $salt)
-            ->set('email', strtolower($user).'@email.com')
-            ->set('firstname', strtolower($user))
-            ->set('lastname', strtolower($user).'ton')
+            ->set('email', _slug($user).rand(1,100).'@email.com')
+            ->set('firstname', $user)
+            ->set('lastname', $user.'ton')
             ->set('country', 'UK')
             ->set('rolesid', 1)
             ->do();
 
+    // Create some fake sessions (1 in 3)
+    if(rand(0,2)==1){
+        Sequel::insert('users_session')
+            ->set('hash', Hash::unique())
+            ->set('usersid', $id)
+            ->do();
+    }    
+    
 }
 
 // Create a batch of teams
 
 $teams = [
-    'Powerhouse', 'Advertising', 'RaceCrew', 'Yamaha', 'Sprouts'
+    'Powerhouse', 'Advertising', 'Race Crew 100%', 'Yamaha', 'Sprouts', 
+    'Leslivius', 'Steel Works Inc.', 'Commpanions', 'Octaginarian Men', 'The A-Team'
 ];
 
+$teamid = 0;
 foreach($teams as $team){
 
-    $salt = Salt::shake();
+    $teamid++;
 
     Sequel::insert('teams')
-            ->set('slug', strtolower($team))
+            ->set('slug', _slug($team))
             ->set('name', $team)
             ->do();
+
+    // Put some users in teams (1 in 2)
+    if(rand(0,1)==1){
+        Sequel::insert('users_teams_relation')
+            ->set('usersid', rand(1, $id))
+            ->set('teamsid', $teamid)
+            ->do();
+    }  
+
+    
 
 }

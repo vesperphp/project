@@ -6,6 +6,15 @@
 
 <h1>Users</h1>
 
-{% dump($users); %}
+{% if($users!=NULL): %}
+
+    {% Paginate::front($users); %}
+    {{ $user_list }}
+    {% Paginate::front($users); %}
+
+{% else: %}
+    {% Re::direct('error/404'); %}
+{% endif; %}
+
 
 {% endblock %}
