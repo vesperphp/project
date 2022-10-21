@@ -2,7 +2,7 @@
 
 use Sequel\Tablier;
 
-$t = new Tablier('posts');
+$t = new Tablier('pages');
 
 $t->int('id')->primary();
 
