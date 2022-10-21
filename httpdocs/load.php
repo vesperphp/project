@@ -19,10 +19,10 @@ require_once ROOTPATH."/vendor/autoload.php";
 
 /**
  * Load the routes and hooks
- * from the vendor packages.
+ * from the vesperphp vendor packages.
  */
 
-foreach (glob(ROOTPATH."/vendor/vesperphp/*/init/load.php") as $filename){ require_once $filename; }
+foreach (glob() as $filename){ require_once ROOTPATH."/vendor/vesperphp/*/init/load.php"; }
 
 /**
  * Load all the init files
