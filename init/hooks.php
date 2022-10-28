@@ -24,3 +24,4 @@ Hook::asset('foot', 'AssetFilterFoot', [Assets::class,'foot']);
  */
 
 //Hook::asset('frontier/head', 'homeAsset1', [HomeController::class,'assets']);
+// test
