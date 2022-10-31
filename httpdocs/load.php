@@ -22,7 +22,7 @@ require_once ROOTPATH."/vendor/autoload.php";
  * from the vesperphp vendor packages.
  */
 
-foreach (glob() as $filename){ require_once ROOTPATH."/vendor/vesperphp/*/init/load.php"; }
+require_once ROOTPATH."/vendor/vesperphp/elemental/init/load.php";
 
 /**
  * Load all the init files

@@ -19,6 +19,8 @@ class Assets{
 
     echo "<!-- This website is crafted with Vesper-PHP. -->"."\n";
     echo '<link rel="stylesheet" href="'.Config::get('site/uri').'/css/vesper-bulma.css">'."\n";
+    echo '<link rel="stylesheet" href="'.Config::get('site/uri').'/css/vesper-css.css">'."\n";
+    //echo '<link rel="stylesheet" href="'.Config::get('site/uri').'/css/app.css">'."\n";
     
   }
 
