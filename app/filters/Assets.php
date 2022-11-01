@@ -18,9 +18,7 @@ class Assets{
   public function head(){
 
     echo "<!-- This website is crafted with Vesper-PHP. -->"."\n";
-    echo '<link rel="stylesheet" href="'.Config::get('site/uri').'/css/vesper-bulma.css">'."\n";
-    echo '<link rel="stylesheet" href="'.Config::get('site/uri').'/css/vesper-css.css">'."\n";
-    //echo '<link rel="stylesheet" href="'.Config::get('site/uri').'/css/app.css">'."\n";
+    echo '<link rel="stylesheet" href="'.Config::get('site/uri').'/css/vesper.css">'."\n";
     
   }
 
@@ -32,7 +30,7 @@ class Assets{
 
   public function foot(){
 
-    echo '<script src="'.Config::get('site/uri').'/js/vesper-bundle.js"></script>';
+    echo '<script src="'.Config::get('site/uri').'/js/vesper.js"></script>';
     
   }
 

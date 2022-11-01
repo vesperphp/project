@@ -13,7 +13,8 @@
   ],
 
   "require": {
-    "vesperphp/elemental": "0.*"
+    "vesperphp/elemental": "0.*",
+    "scssphp/scssphp": "^1.11.0"
   },
   
   "autoload": {
@@ -21,6 +22,7 @@
       "app/models", 
       "app/controllers", 
       "app/filters",
+      "app/ware",
       "vendor/vesperphp"
     ]
   },

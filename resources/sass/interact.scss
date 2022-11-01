@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* interact stylesheet builder */
+
+/* nulling  */
+@import "partials/basics.scss";
+
+/* padding, margin, widths, heights */
+@import "partials/sizes.scss"; 
+
+/* colour styles */ 
+@import "partials/colors.scss";
+
+/* border widths and radius styles */ 
+@import "partials/border.scss"; 
+
+/* button and link styles */ 
+@import "partials/buttons.scss"; 
+
+/* grid styles */ 
+@import "partials/grid.scss"; 
+
+/* form and label styles */
+@import "partials/forms.scss";  
+
+/* images and avatar styles */ 
+@import "partials/images.scss"; 
+
+/* formality form builder */
+@import "partials/formality.scss";  
+
+/* reusable elements */
+@import "partials/elements.scss"; 
+
+/* the admin panel structure */
+@import "partials/admin.scss"; 
+
+/* transition animations */
+@import "partials/transitions.scss"; 
