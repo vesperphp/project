@@ -28,7 +28,9 @@
       "app/controllers", 
       "app/filters",
       "app/ware",
-      "vendor/vesperphp"
+      "vendor/vesperphp",
+      "vendor/rik-janssen",
+      "vendor/cart-rd"
     ]
   },
 
