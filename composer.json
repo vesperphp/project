@@ -13,8 +13,7 @@
   ],
 
   "require": {
-    "vesperphp/elemental": "0.*",
-    "scssphp/scssphp": "^1.11.0"
+    "vesperphp/elemental": "0.*"
   },
   
   "autoload": {
