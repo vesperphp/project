@@ -2,7 +2,7 @@
 
 namespace App\Assets;
 
-use Elemental\Config;
+use Config\Config;
 
 
 class Assets{

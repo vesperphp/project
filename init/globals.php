@@ -1,7 +1,7 @@
 <?php
 
 //use App\Models\UserModel;
-use Elemental\Config;
+use Config\Config;
 
 /**
  * This is the place to set up global

@@ -81,7 +81,7 @@ $config = [
      */
 
     'namespaces' => [ 
-      'Elemental\Config',
+      'Config\Config',
       'Elemental\Re',
       'Frontier\Service\Glob',
       'Frontier\Service\Flash',

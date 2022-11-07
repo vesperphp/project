@@ -21,7 +21,8 @@
     "rik-janssen/route": "0.*",
     "cart-rd/interact": "0.*",
     "cart-rd/foundry": "0.*",
-    "cart-rd/logger": "0.*"
+    "cart-rd/logger": "0.*",
+    "scssphp/scssphp": "^1.11.0"
   },
   
   "autoload": {
