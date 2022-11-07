@@ -18,6 +18,7 @@
     "rik-janssen/sequel": "0.*",
     "rik-janssen/formality": "0.*",
     "rik-janssen/frontier": "0.*",
+    "rik-janssen/route": "0.*",
     "cart-rd/interact": "0.*",
     "cart-rd/foundry": "0.*",
     "cart-rd/logger": "0.*"
@@ -27,8 +28,8 @@
     "classmap": [
       "app/models", 
       "app/controllers", 
-      "app/filters",
-      "app/ware",
+      "app/providers",
+      "app/providers/ware",
       "vendor/vesperphp",
       "vendor/rik-janssen",
       "vendor/cart-rd"
