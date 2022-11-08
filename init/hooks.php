@@ -1,6 +1,6 @@
 <?php
 
-use App\Assets\Assets;
+use App\Assets;
 use Frontier\Service\Hook;
 use App\Controllers\HomeController;
 use Interact\Service\InteractNavigation;
