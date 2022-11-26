@@ -11,24 +11,24 @@ $radius: 5px;
 $borderWidth: 1px;
 $borderStyle: solid;
 
-$primary: #f0f;
-$secondary: #00f;
+$primary: #FF7E94;
+$secondary: #FAC398;
 
-$dark: #222;
-$light: #efefef;
+$dark: #2B2E47;
+$light: #D9DBE8;
 $black: black;
 $white: white;
 
 $danger: red;
 $warning: yellow;
 $success: green;
-$info: blue;
+$info: #65A0FB;
 
 $lighter: +15%;
 $darker: -15%;
 
 $fontFamily: 'Arial', 'Helvetica';
-$headerFamily: 'Courier', 'Helvetica';
+$headerFamily: 'Arial', 'Helvetica';
 $fontSize: 17px;
 $lineHeight: 1.3em;
 
@@ -42,4 +42,13 @@ $textDecoration: none;
 $linkColor: $primary;
 $linkHover: $secondary;
 
+$listType: none;
+
 $gridGap: 20px;
+
+$sidepadding: 30px;
+$sidepaddingTablet: 20px;
+$sidepaddingMobile: 15px;
+
+$tabletBreak: 1920px;
+$mobileBreak: 720px;

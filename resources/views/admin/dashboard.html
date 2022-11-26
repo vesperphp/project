@@ -3,7 +3,72 @@
 {% block title %}Dashboard{% endblock %}
 
 {% block content %}
+    
+<div class="fixed top0 left0 right0 dark navbar">
+    
+    <div class="wrapper marginauto sidepadding">
 
-<h1>Dashboard</h1>
+        <div class="grid">
+            <div class="col-60">
+                <h1>
+                    <span>Vesper</span>
+                    Interact
+                </h1>
+            </div>
+            <div class="col-40 align-right">
+                
+                <div class="profile-box">
+
+                    <ul class="profile-name">
+                        <li class="username"><a href="{% route admin/user/edit/{id} %}">Username</a></li>
+                        <li class="modify">
+                            <a href="{% route admin/user/edit/{id} %}">
+                                <div class="navname">menu</div>
+                                <div class="navdropout dark-light border rounded p-l">
+                                    <ul>
+                                        <li>View profile</li>
+                                        <li>Edit profile</li>
+                                        <li class="line"></li>
+                                        <li>Log out</li>
+                                    </ul>
+                                </div>
+                            </a></li>
+                    </ul>
+
+                    <div class="profile-picture">
+                        <img src="https://nl.gravatar.com/userimage/158933468/6ff22efa1371215896a0ca8a14f14dc7.jpeg" class="rounded profile-small" alt="">
+                    </div>
+
+                </div>
+                
+
+                
+
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+	<div class="wrapper marginauto sidepadding">
+		<div class="interact-panel grid breakmobile">
+            
+			<aside class="col-30 menu p-5 mobile-harmonica">
+                <button class="mobile-harmonica-button button primary fullwidth border b transparent" onclick="toggleMobile('admin-nav-content')">Navigation</button>
+                <div id="admin-nav-content" class="mobile-harmonica-content mobile-hidden">
+                    {% hook admin_nav %}
+                </div>
+			</aside>
+		
+			<div class="col-70 content p-5">
+        
+            <h1>Dashboard</h1>
+
+			{% flash admin %}
+		
+			</div>
+		
+		</div>
+	</div>
 
 {% endblock %}

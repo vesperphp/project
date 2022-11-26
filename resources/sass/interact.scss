@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 /* interact stylesheet builder */
 
 /* nulling  */
@@ -7,6 +8,9 @@
 
 /* padding, margin, widths, heights */
 @import "../../vendor/rik-janssen/frontier/sass/sizes.scss"; 
+
+/* text styles */ 
+@import "../../vendor/rik-janssen/frontier/sass/text.scss"; 
 
 /* colour styles */ 
 @import "../../vendor/rik-janssen/frontier/sass/colors.scss";
@@ -20,6 +24,12 @@
 /* grid styles */ 
 @import "../../vendor/rik-janssen/frontier/sass/grid.scss"; 
 
+/* list styles */ 
+@import "../../vendor/rik-janssen/frontier/sass/list.scss"; 
+
+/* positions styles */ 
+@import "../../vendor/rik-janssen/frontier/sass/position.scss"; 
+
 /* form and label styles */
 @import "../../vendor/rik-janssen/frontier/sass/forms.scss";  
 
@@ -32,8 +42,18 @@
 /* reusable elements */
 @import "../../vendor/rik-janssen/frontier/sass/elements.scss"; 
 
+/* mobile-harmonica elements */
+@import "../../vendor/rik-janssen/frontier/sass/mobile-harmonica.scss"; 
+
+/* profile elements */
+@import "../../vendor/rik-janssen/frontier/sass/profile.scss"; 
+
 /* the admin panel structure */
 @import "../../vendor/rik-janssen/frontier/sass/admin.scss"; 
 
 /* transition animations */
 @import "../../vendor/rik-janssen/frontier/sass/transitions.scss"; 
+
+
+/* DEBUGGING HELPER */
+ /*@import "../../vendor/rik-janssen/frontier/sass/debug.scss"; */
