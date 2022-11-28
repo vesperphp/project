@@ -7,7 +7,6 @@
   font-family: "Arial", "Helvetica";
   line-height: 1.3em;
   font-weight: normal;
-  box-sizing: border-box;
 }
 /* text in basics */
 p {
@@ -52,9 +51,6 @@ h5 {
 /* interact stylesheet builder */
 /* nulling  */
 /* padding, margin, widths, heights */
-.marginauto {
-  margin: 0 auto;
-}
 .mt-s {
   margin-top: 5px;
 }
@@ -248,76 +244,38 @@ h5 {
 .fullwidth {
   width: 100%;
 }
-.sidepadding {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-@media (max-width: 1920px) {
-  .sidepadding {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (max-width: 720px) {
-  .sidepadding {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
 /* text styles */
-.align-right {
-  text-align: right;
-}
-.align-left {
-  text-align: left;
-}
-.align-center {
-  text-align: center;
-}
-.align-justify {
-  text-align: justify;
-}
 /* colour styles */
 /* background colours **/
 .primary {
   background-color: #FF7E94;
-  color: #D9DBE8;
 }
 .secondary {
   background-color: #FAC398;
-  color: #2B2E47;
 }
 .dark {
   background-color: #2B2E47;
-  color: #D9DBE8;
 }
 .light {
   background-color: #D9DBE8;
-  color: #2B2E47;
 }
 .black {
   background-color: black;
-  color: white;
 }
 .white {
   background-color: white;
-  color: black;
 }
 .danger {
   background-color: red;
-  color: white;
 }
 .warning {
   background-color: yellow;
-  color: #2B2E47;
 }
 .success {
   background-color: green;
-  color: white;
 }
 .info {
   background-color: #65A0FB;
-  color: white;
 }
 .primary-light {
   background-color: #ff91a4;
@@ -421,9 +379,6 @@ h5 {
 .radius {
   border-radius: 5px;
 }
-.sharp {
-  border-radius: 0;
-}
 .round {
   border-radius: 100%;
 }
@@ -509,9 +464,6 @@ h5 {
 .button .info-hover:hover {
   background-color: #65A0FB;
 }
-button.transparent {
-  background-color: transparent;
-}
 a:hover {
   color: #FAC398;
 }
@@ -552,260 +504,135 @@ a .text-decoration {
   flex-wrap: wrap;
   flex-direction: row;
 }
+.grid .wrap {
+  flex-wrap: wrap;
+}
+.grid .nowrap {
+  flex-wrap: nowrap;
+}
+.grid .wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.grid .column {
+  flex-direction: column;
+}
+.grid .column-reverse {
+  flex-direction: column-reverse;
+}
+.grid .row {
+  flex-direction: row;
+}
+.grid .row-reverse {
+  flex-direction: row-reverse;
+}
+.grid .flex-start {
+  justify-content: flex-start;
+}
+.grid .flex-end {
+  justify-content: flex-end;
+}
+.grid .flex-center {
+  justify-content: center;
+}
+.grid .flex-space-between {
+  justify-content: space-between;
+}
+.grid .flex-space-around {
+  justify-content: space-around;
+}
+.grid .flex-space-evenly {
+  justify-content: space-evenly;
+}
+.grid .align-stretch {
+  align-items: stretch;
+}
+.grid .align-start {
+  align-items: flex-start;
+}
+.grid .align-end {
+  align-items: flex-end;
+}
+.grid .align-center {
+  align-items: center;
+}
+.grid .align-baseline {
+  align-items: baseline;
+}
+.grid .content-start {
+  align-content: flex-start;
+}
+.grid .content-end {
+  align-content: flex-end;
+}
+.grid .content-center {
+  align-content: center;
+}
+.grid .content-space-between {
+  align-content: space-between;
+}
+.grid .content-space-around {
+  align-content: space-around;
+}
+.grid .content-space-evenly {
+  align-content: space-evenly;
+}
+.grid .content-stretch {
+  align-content: stretch;
+}
+.grid .gap {
+  gap: 20px;
+}
+.grid .nogap {
+  gap: 0;
+}
 .grid * {
   flex-grow: 1;
 }
-.grid .col-100 {
+.grid .col-1 {
   width: 100%;
 }
-.grid .col-95 {
-  width: 95%;
-}
-.grid .col-90 {
-  width: 90%;
-}
-.grid .col-85 {
-  width: 85%;
-}
-.grid .col-80 {
-  width: 80%;
-}
-.grid .col-75 {
-  width: 75%;
-}
-.grid .col-70 {
-  width: 70%;
-}
-.grid .col-65 {
-  width: 65%;
-}
-.grid .col-60 {
-  width: 60%;
-}
-.grid .col-55 {
-  width: 55%;
-}
-.grid .col-50 {
+.grid .col-2 {
   width: 50%;
 }
-.grid.wrap {
-  flex-wrap: wrap;
+.grid .col-3 {
+  width: 33.333%;
 }
-.grid.grid.grid.nowrap {
-  flex-wrap: nowrap;
+.grid .col-4 {
+  width: 25%;
 }
-.wrap-reverse {
-  flex-wrap: wrap-reverse;
+.grid .col-5 {
+  width: 20%;
 }
-.column {
-  flex-direction: column;
+.grid .col-6 {
+  width: 16.666%;
 }
-.grid.column-reverse {
-  flex-direction: column-reverse;
+.grid .col-7 {
+  width: 14.285%;
 }
-.grid.row {
-  flex-direction: row;
+.grid .col-8 {
+  width: 12.5%;
 }
-.grid.row-reverse {
-  flex-direction: row-reverse;
+.grid .col-9 {
+  width: 11.111%;
 }
-.grid.flex-start {
-  justify-content: flex-start;
+.grid .col-10 {
+  width: 10%;
 }
-.grid.flex-end {
-  justify-content: flex-end;
+.grid .col-11 {
+  width: 9.09%;
 }
-.grid.flex-center {
-  justify-content: center;
-}
-.grid.flex-space-between {
-  justify-content: space-between;
-}
-.grid.flex-space-around {
-  justify-content: space-around;
-}
-.grid.flex-space-evenly {
-  justify-content: space-evenly;
-}
-.grid.align-stretch {
-  align-items: stretch;
-}
-.grid.align-start {
-  align-items: flex-start;
-}
-.grid.align-end {
-  align-items: flex-end;
-}
-.grid.align-center {
-  align-items: center;
-}
-.grid.align-baseline {
-  align-items: baseline;
-}
-.grid.content-start {
-  align-content: flex-start;
-}
-.grid.content-end {
-  align-content: flex-end;
-}
-.grid.content-center {
-  align-content: center;
-}
-.grid.content-space-between {
-  align-content: space-between;
-}
-.grid.content-space-around {
-  align-content: space-around;
-}
-.grid.content-space-evenly {
-  align-content: space-evenly;
-}
-.grid.content-stretch {
-  align-content: stretch;
-}
-.grid.gap {
-  gap: 20px;
-}
-.grid.nogap {
-  gap: 0;
-}
-@media (max-width: 1920px) {
-  .grid.breaktablet {
-    display: block;
-  }
-}
-@media (max-width: 720px) {
-  .grid.breakmobile {
-    display: block;
-  }
+.grid .col-12 {
+  width: 8.333%;
 }
 /* list styles */
-li {
-  list-style-type: none;
-}
 /* positions styles */
-.absolute {
-  position: absolute;
-}
-.relative {
-  position: relative;
-}
-.sticky {
-  position: sticky;
-}
-.fixed {
-  position: fixed;
-}
-.top0 {
-  top: 0;
-}
-.left0 {
-  left: 0;
-}
-.right0 {
-  right: 0;
-}
-.bottom0 {
-  bottom: 0;
-}
 /* form and label styles */
 /* images and avatar styles */
-img.rounded {
-  border-radius: 100%;
-}
-img.cover {
-  object-fit: cover;
-}
-img.fill {
-  object-fit: fill;
-}
-img.contain {
-  object-fit: contain;
-}
 /* formality form builder */
 /* reusable elements */
-.navbar h1, .navbar h1 span {
-  font-size: 20px;
-}
-.navbar h1 span, .navbar h1 span span {
-  color: #65A0FB;
-  font-weight: lighter;
-}
-.navbar .wrapper .grid {
-  align-items: center;
-}
-.visible {
-  display: block;
-}
-.hidden {
-  display: none;
-}
-@media (max-width: 720px) {
-  .mobile-visible {
-    display: block;
-  }
-  .mobile-hidden {
-    display: none;
-  }
-}
 /* mobile-harmonica elements */
-.mobile-harmonica-button {
-  display: none;
-}
-@media (max-width: 720px) {
-  .mobile-harmonica-button {
-    display: block;
-  }
-}
 /* profile elements */
-.profile-box {
-  display: flex;
-  align-items: center;
-}
-.profile-box .profile-name {
-  flex-grow: 3;
-  text-align: right;
-}
-.profile-box .profile-name .username {
-  font-size: 0.9em;
-  color: white;
-}
-.profile-box .profile-name .modify, .profile-box .profile-name .modify a .navname {
-  font-size: 0.55em;
-  color: #D9DBE8;
-  text-transform: uppercase;
-  position: relative;
-}
-.profile-box .profile-name .modify a .navdropout {
-  display: none;
-  position: absolute;
-}
-.profile-box .profile-name .modify a:hover .navdropout {
-  display: block;
-  position: absolute;
-}
-.profile-box .profile-picture {
-  max-width: 50px;
-  flex-grow: 1;
-  text-align: right;
-}
-.profile-box .profile-picture img {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #D9DBE8;
-}
 /* the admin panel structure */
-body {
-  padding-top: 90px;
-  background-color: #2B2E47;
-}
-/* Interact navigation */
-.navbar {
-  background: linear-gradient(90deg, #363558 0%, #363558 85%, #3a3461 100%);
-  border-bottom: 1px solid #3A3461;
-  padding: 10px 0 10px 0;
-}
-/* https://cssgradient.io/ */
 /* transition animations */
 /* DEBUGGING HELPER */
-/*@import "../../vendor/rik-janssen/frontier/sass/debug.scss"; */
+/*@import "../../vendor/vesperphp/frontal/sass/debug.scss"; */

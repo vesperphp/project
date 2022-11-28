@@ -27,7 +27,6 @@
       "app/providers",
       "app/providers/ware",
       "vendor/vesperphp",
-      "vendor/rik-janssen",
       "vendor/cart-rd"
     ]
   },
