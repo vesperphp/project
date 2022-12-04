@@ -4,56 +4,56 @@
 /* interact stylesheet builder */
 
 /* nulling  */
-@import "../../vendor/vesperphp/frontal/sass/basics.scss";
+@import "../../vendor/vesperphp/elemental/sass/basics.scss";
 
 /* padding, margin, widths, heights */
-@import "../../vendor/vesperphp/frontal/sass/sizes.scss"; 
+@import "../../vendor/vesperphp/elemental/sass/sizes.scss"; 
 
 /* text styles */ 
-@import "../../vendor/vesperphp/frontal/sass/text.scss"; 
+@import "../../vendor/vesperphp/elemental/sass/text.scss"; 
 
 /* colour styles */ 
-@import "../../vendor/vesperphp/frontal/sass/colors.scss";
+@import "../../vendor/vesperphp/elemental/sass/colors.scss";
 
 /* border widths and radius styles */ 
-@import "../../vendor/vesperphp/frontal/sass/border.scss"; 
+@import "../../vendor/vesperphp/elemental/sass/border.scss"; 
 
 /* button and link styles */ 
-@import "../../vendor/vesperphp/frontal/sass/buttons.scss"; 
+@import "../../vendor/vesperphp/elemental/sass/buttons.scss"; 
 
 /* grid styles */ 
-@import "../../vendor/vesperphp/frontal/sass/grid.scss"; 
+@import "../../vendor/vesperphp/elemental/sass/grid.scss"; 
 
 /* list styles */ 
-@import "../../vendor/vesperphp/frontal/sass/list.scss"; 
+@import "../../vendor/vesperphp/elemental/sass/list.scss"; 
 
 /* positions styles */ 
-@import "../../vendor/vesperphp/frontal/sass/position.scss"; 
+@import "../../vendor/vesperphp/elemental/sass/position.scss"; 
 
 /* form and label styles */
-@import "../../vendor/vesperphp/frontal/sass/forms.scss";  
+@import "../../vendor/vesperphp/elemental/sass/forms.scss";  
 
 /* images and avatar styles */ 
-@import "../../vendor/vesperphp/frontal/sass/images.scss"; 
+@import "../../vendor/vesperphp/elemental/sass/images.scss"; 
 
 /* formality form builder */
-@import "../../vendor/vesperphp/frontal/sass/formality.scss";  
+@import "../../vendor/vesperphp/elemental/sass/formality.scss";  
 
 /* reusable elements */
-@import "../../vendor/vesperphp/frontal/sass/elements.scss"; 
+@import "../../vendor/vesperphp/elemental/sass/elements.scss"; 
 
 /* mobile-harmonica elements */
-@import "../../vendor/vesperphp/frontal/sass/mobile-harmonica.scss"; 
+@import "../../vendor/vesperphp/elemental/sass/mobile-harmonica.scss"; 
 
 /* profile elements */
-@import "../../vendor/vesperphp/frontal/sass/profile.scss"; 
+@import "../../vendor/vesperphp/elemental/sass/profile.scss"; 
 
 /* the admin panel structure */
-@import "../../vendor/vesperphp/frontal/sass/admin.scss"; 
+@import "../../vendor/vesperphp/elemental/sass/admin.scss"; 
 
 /* transition animations */
-@import "../../vendor/vesperphp/frontal/sass/transitions.scss"; 
+@import "../../vendor/vesperphp/elemental/sass/transitions.scss"; 
 
 
 /* DEBUGGING HELPER */
- /*@import "../../vendor/vesperphp/frontal/sass/debug.scss"; */
+ /*@import "../../vendor/vesperphp/elemental/sass/debug.scss"; */

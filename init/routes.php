@@ -16,7 +16,6 @@ use App\Controllers\HomeController;
 Route::get('/', HomeController::class, 'index');
 Route::get('hooks/', HomeController::class, 'hook');
 Route::get('test/', HomeController::class, 'test');
-Route::get('test/{paginate}', HomeController::class, 'test'); // activate pagination
 
 
 /**

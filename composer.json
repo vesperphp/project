@@ -14,8 +14,6 @@
 
   "require": {
     "vesperphp/elemental": "0.*",
-    "vesperphp/frontal": "0.*",
-    "vesperphp/processor": "0.*",
     "cart-rd/logger": "0.*",
     "scssphp/scssphp": "^1.11.0"
   },

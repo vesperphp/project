@@ -23,7 +23,6 @@ require_once ROOTPATH."/vendor/autoload.php";
  */
 
 require_once ROOTPATH."/vendor/vesperphp/elemental/init/load.php";
-require_once ROOTPATH."/vendor/vesperphp/frontal/init/load.php";
 
 /**
  * Load all the init files
