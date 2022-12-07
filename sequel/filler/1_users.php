@@ -16,6 +16,7 @@ Sequel::insert('roles')->set('name', 'User')->set('slug', 'user')->set('params',
 Sequel::insert('roles')->set('name', 'Moderator')->set('slug', 'mod')->set('params', json_encode([]))->do(); // 1
 Sequel::insert('roles')->set('name', 'Administrator')->set('slug', 'admin')->set('params', json_encode([]))->do(); // 2
 Sequel::insert('roles')->set('name', 'Blocked')->set('slug', 'blocked')->set('params', json_encode([]))->do(); // 3
+Sequel::insert('roles')->set('name', 'Early adopter')->set('slug', 'early')->set('params', json_encode([]))->do(); // 4
 
 // Admin user
 

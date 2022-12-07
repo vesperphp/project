@@ -29,5 +29,6 @@ require_once ROOTPATH."/vendor/vesperphp/elemental/init/load.php";
  * in the init folder.
  */
 
+ 
 foreach (glob(ROOTPATH."/init/*.php") as $filename){ require_once $filename; }
 foreach (glob(ROOTPATH."/app/filters/functions/*.php") as $filename){ require_once $filename; }
