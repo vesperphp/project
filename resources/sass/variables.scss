@@ -1,54 +1,36 @@
-$mar-pad-s: 5px;
-$mar-pad-m: 15px;
-$mar-pad-l: 30px;
-$mar-pad-xl: 60px;
+$ratio: 5;
+$exponent: 9;
 
-$mobileWidth: 500px;
-$normalWidth: 1200px;
-$fullWidth: 100%; 
+$mobile: 500px;
+$desktop: 1200px;
+$ultrawide: 100%; 
 
-$radius: 5px;
+$radius: #{$ratio}px;
 $borderWidth: 1px;
 $borderStyle: solid;
 
 $primary: #FF7E94;
 $secondary: #FAC398;
-
 $dark: #2B2E47;
 $light: #D9DBE8;
 $black: black;
 $white: white;
-
 $danger: red;
 $warning: yellow;
 $success: green;
 $info: #65A0FB;
 
-$lighter: +15%;
-$darker: -15%;
-
 $fontFamily: 'Arial', 'Helvetica';
 $headerFamily: 'Arial', 'Helvetica';
-$fontSize: 17px;
+$fontSize: 16px;
 $lineHeight: 1.3em;
-
-$h1: 50px;
-$h2: 40px;
-$h3: 25px;
-$h4: 20px;
-$h5: 16px;
-
 $textDecoration: none;
-$linkColor: $primary;
-$linkHover: $secondary;
-
 $listType: none;
 
-$gridGap: 20px;
+$breakpoints:
+"ultrawide" 2500px,
+"desktop" 1900px,
+"tablet" 920px,
+"mobile" 520px;
 
-$sidepadding: 30px;
-$sidepaddingTablet: 20px;
-$sidepaddingMobile: 15px;
-
-$tabletBreak: 1920px;
-$mobileBreak: 720px;
+/* maybe work from mobile up.. */
