@@ -4,7 +4,7 @@
 
 {% block content %}
     
-<div class="fixed top0 left0 right0 dark navbar">
+<div class="fixed position-top position-left position-right dark navbar">
     
     <div class="wrapper marginauto sidepadding">
 
@@ -21,18 +21,6 @@
 
                     <ul class="profile-name">
                         <li class="username"><a href="{% route admin/user/edit/{id} %}">Username</a></li>
-                        <li class="modify">
-                            <a href="{% route admin/user/edit/{id} %}">
-                                <div class="navname">menu</div>
-                                <div class="navdropout dark-light border rounded p-l">
-                                    <ul>
-                                        <li>View profile</li>
-                                        <li>Edit profile</li>
-                                        <li class="line"></li>
-                                        <li>Log out</li>
-                                    </ul>
-                                </div>
-                            </a></li>
                     </ul>
 
                     <div class="profile-picture">
@@ -41,7 +29,7 @@
 
                 </div>
                 
-
+ 
                 
 
             </div>

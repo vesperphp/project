@@ -235,6 +235,9 @@ h5 {
 .p-xl {
   padding: 60px;
 }
+.marginauto {
+  margin: 0 auto;
+}
 .wrapper-small {
   max-width: 500px;
 }
@@ -437,31 +440,31 @@ h5 {
   font-size: 17px;
   color: white;
 }
-.button .fullwidth {
+.button.fullwidth {
   display: block;
 }
-.button .primary-hover:hover {
+.button.primary-hover:hover {
   background-color: #FF7E94;
 }
-.button .secondary-hover:hover {
+.button.secondary-hover:hover {
   background-color: #FAC398;
 }
-.button .dark-hover:hover {
+.button.dark-hover:hover {
   background-color: #2B2E47;
 }
-.button .light-hover:hover {
+.button.light-hover:hover {
   background-color: #D9DBE8;
 }
-.button .danger-hover:hover {
+.button.danger-hover:hover {
   background-color: red;
 }
-.button .warning-hover:hover {
+.button.warning-hover:hover {
   background-color: yellow;
 }
-.button .success-hover:hover {
+.button.success-hover:hover {
   background-color: green;
 }
-.button .info-hover:hover {
+.button.info-hover:hover {
   background-color: #65A0FB;
 }
 a:hover {
@@ -504,85 +507,85 @@ a .text-decoration {
   flex-wrap: wrap;
   flex-direction: row;
 }
-.grid .wrap {
+.wrap {
   flex-wrap: wrap;
 }
-.grid .nowrap {
+.nowrap {
   flex-wrap: nowrap;
 }
-.grid .wrap-reverse {
+.wrap-reverse {
   flex-wrap: wrap-reverse;
 }
-.grid .column {
+.column {
   flex-direction: column;
 }
-.grid .column-reverse {
+.column-reverse {
   flex-direction: column-reverse;
 }
-.grid .row {
+.row {
   flex-direction: row;
 }
-.grid .row-reverse {
+.row-reverse {
   flex-direction: row-reverse;
 }
-.grid .flex-start {
+.flex-start {
   justify-content: flex-start;
 }
-.grid .flex-end {
+.flex-end {
   justify-content: flex-end;
 }
-.grid .flex-center {
+.flex-center {
   justify-content: center;
 }
-.grid .flex-space-between {
+.flex-space-between {
   justify-content: space-between;
 }
-.grid .flex-space-around {
+.flex-space-around {
   justify-content: space-around;
 }
-.grid .flex-space-evenly {
+.flex-space-evenly {
   justify-content: space-evenly;
 }
-.grid .align-stretch {
+.align-stretch {
   align-items: stretch;
 }
-.grid .align-start {
+.align-start {
   align-items: flex-start;
 }
-.grid .align-end {
+.align-end {
   align-items: flex-end;
 }
-.grid .align-center {
+.align-center {
   align-items: center;
 }
-.grid .align-baseline {
+.align-baseline {
   align-items: baseline;
 }
-.grid .content-start {
+.content-start {
   align-content: flex-start;
 }
-.grid .content-end {
+.content-end {
   align-content: flex-end;
 }
-.grid .content-center {
+.content-center {
   align-content: center;
 }
-.grid .content-space-between {
+.content-space-between {
   align-content: space-between;
 }
-.grid .content-space-around {
+.content-space-around {
   align-content: space-around;
 }
-.grid .content-space-evenly {
+.content-space-evenly {
   align-content: space-evenly;
 }
-.grid .content-stretch {
+.content-stretch {
   align-content: stretch;
 }
-.grid .gap {
+.gap {
   gap: 20px;
 }
-.grid .nogap {
+.nogap {
   gap: 0;
 }
 .grid * {
@@ -626,13 +629,188 @@ a .text-decoration {
 }
 /* list styles */
 /* positions styles */
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.sticky {
+  position: sticky;
+}
+.position-left {
+  left: 0;
+}
+.position-left-s {
+  left: 5px;
+}
+.position-left-m {
+  left: 15px;
+}
+.position-left-l {
+  left: 30px;
+}
+.position-left-xl {
+  left: 60px;
+}
+.position-right {
+  right: 0;
+}
+.position-right-s {
+  right: 5px;
+}
+.position-right-m {
+  right: 15px;
+}
+.position-right-l {
+  right: 30px;
+}
+.position-right-xl {
+  right: 60px;
+}
+.position-top {
+  top: 0;
+}
+.position-top-s {
+  top: 5px;
+}
+.position-top-m {
+  top: 15px;
+}
+.position-top-l {
+  top: 30px;
+}
+.position-top-xl {
+  top: 60px;
+}
+.position-bottom {
+  bottom: 0;
+}
+.position-bottom-s {
+  bottom: 5px;
+}
+.position-bottom-m {
+  bottom: 15px;
+}
+.position-bottom-l {
+  bottom: 30px;
+}
+.position-bottom-xl {
+  bottom: 60px;
+}
+.index-1 {
+  z-index: 10;
+}
+.index-2 {
+  z-index: 20;
+}
+.index-3 {
+  z-index: 30;
+}
+.index-4 {
+  z-index: 40;
+}
+.index-5 {
+  z-index: 50;
+}
+.index-6 {
+  z-index: 60;
+}
+.index-7 {
+  z-index: 70;
+}
+.index-8 {
+  z-index: 80;
+}
+.index-9 {
+  z-index: 90;
+}
+.index-10 {
+  z-index: 100;
+}
 /* form and label styles */
 /* images and avatar styles */
 /* formality form builder */
 /* reusable elements */
+.mobile-hidden, .mobile-visible {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+@media (min-width: 500px) {
+  .mobile-hidden {
+    display: none;
+  }
+  .mobile-visible {
+    display: block;
+  }
+}
 /* mobile-harmonica elements */
 /* profile elements */
+.profile-box {
+  display: flex;
+}
+.profile-name li.username {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.profile-name li.modify {
+  font-weight: lighter;
+}
+.profile-picture {
+  width: 35px;
+  height: 35px;
+}
+.profile-picture img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
 /* the admin panel structure */
+.interact {
+  padding-top: 60px;
+}
+.interact .navbar h1 {
+  font-size: 18px;
+  color: #D9DBE8;
+}
 /* transition animations */
+.ease-1 {
+  transition: ease 1 s;
+}
+.ease-2 {
+  transition: ease 2 s;
+}
+.ease-3 {
+  transition: ease 3 s;
+}
+.ease-4 {
+  transition: ease 4 s;
+}
+.ease-5 {
+  transition: ease 5 s;
+}
+.ease-6 {
+  transition: ease 6 s;
+}
+.ease-7 {
+  transition: ease 7 s;
+}
+.ease-8 {
+  transition: ease 8 s;
+}
+.ease-9 {
+  transition: ease 9 s;
+}
+.ease-10 {
+  transition: ease 10 s;
+}
 /* DEBUGGING HELPER */
 /*@import "../../vendor/vesperphp/elemental/sass/debug.scss"; */
