@@ -1,13 +1,13 @@
-$ratio: 5;
+$ratio: 8;
 $exponent: 9;
 
-$mobile: 500px;
-$desktop: 1200px;
-$ultrawide: 100%; 
+$breakpoints:
+"mobile" 520px 100% 1,
+"tablet" 920px 100% 1,
+"desktop" 1900px 100% 0.8,
+"ultrawide" 10000px 1920px 0.8;
 
 $radius: #{$ratio}px;
-$borderWidth: 1px;
-$borderStyle: solid;
 
 $primary: #FF7E94;
 $secondary: #FAC398;
@@ -20,17 +20,20 @@ $warning: yellow;
 $success: green;
 $info: #65A0FB;
 
+$colours: "primary" $primary, "secondary" $secondary, "dark" $dark, "light" $light, "black" $black, "white" $white, "danger" $danger, "warning" $warning, "success" $success, "info" $info;
+
 $fontFamily: 'Arial', 'Helvetica';
-$headerFamily: 'Arial', 'Helvetica';
-$fontSize: 16px;
+$headerFamily: 'Courier', 'Helvetica';
+$fontSize: 18px;
 $lineHeight: 1.3em;
 $textDecoration: none;
-$listType: none;
+$iconFont: 'Arial';
+$icons:
+"info" "I",
+"mail" "E",
+"user" "U";
 
-$breakpoints:
-"ultrawide" 2500px,
-"desktop" 1900px,
-"tablet" 920px,
-"mobile" 520px;
 
-/* maybe work from mobile up.. */
+
+
+
